@@ -3,7 +3,8 @@
 }
 
 :root{
-    /*--myBg: linear-gradient(to right, #ff2a6b, rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9));*/
+    /*--Bg: rgba(0,0,0,0.2)*/
+    --myBg: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9));
 }
 header {
     width: 100%;
@@ -12,7 +13,8 @@ header {
     top:0;
     left:0;
     z-index: 999;
-    margin: 0
+    margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 nav {
     position: absolute;
@@ -35,6 +37,7 @@ nav li {
     display: inline-block;
     margin-left: 25px;
 }
+
 
 #search {
     height: 37px;

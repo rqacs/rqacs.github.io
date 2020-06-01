@@ -7,7 +7,7 @@ export default function Landing() {
 
             <div className="bg-text">
             <h1>RQA Consulting Services</h1>
-            <p>And I'm a Photographer</p>
+            <p>one name for all your solutions!</p>
             </div>
         </div>
     )

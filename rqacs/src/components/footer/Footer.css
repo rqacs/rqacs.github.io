@@ -1,0 +1,8 @@
+*,*::before,*::after {
+    box-sizing: border-box
+}
+
+.footer-menu li {
+    font-size: 15px;
+    color: #1b5074;
+}

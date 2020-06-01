@@ -1,6 +1,6 @@
 .landing {
     margin-top: 0px;
-    height: 70vh;
+    height: 100vh;
   }
   
   * {
@@ -11,7 +11,7 @@
   }
   .bg-image {
     /* The image used */
-    background-image: url("../../../assets/img/landing.jpeg");
+    background-image: url("../../../assets/img/carousel/landing1.jpeg");
   
     /* Add the blur effect */
     filter: blur(8px);

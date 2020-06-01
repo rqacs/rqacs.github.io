@@ -7,32 +7,55 @@ const linkItemStyle = {
 	fontWeight: '500',
 	padding:' 5px 0'
 }
-const linkItemAStyle = {
-	color: '#474747'
-}
+	
+
 class Header extends React.Component{
 	state = {
 		nav : {
-			barheight: '91px',
-			logo:{
+			barheight: '71px',
+			logo:{	
+					paddingTop:'1rem',
 					alignSelf: 'flex-start',
 				   	display: 'inline-block',
-				   	width: '250px'
-			}
+					width: '120px',  
+			},
+			links : [
+				{name:'Home',address:'/',color:'black'},
+				{name:'Services',address:'/',color:'black'},
+				{name:'About',address:'/',color:'black'},
+				{name:'Contact',address:'/',color:'black'},
+			]
 		}
 		
 	}
 	
+	hoverIt(e,name) {
+		var updatedLinks = this.state.nav.links.map((l)=>{
+			if(l.name === name){
+				if(l.color==='black'){
+					l.color = '#e95420';
+				}else{
+					l.color = 'black';
+				}
+			}	
+			return l;
+		});
+		this.setState({
+			links:[...this.state.nav.links,...updatedLinks]
+		});
+	  }
+	  
 
 	listenScrollEvent = e => {
-		if (window.scrollY > 91) {
+		if (window.scrollY > 71) {
 			this.setState(prevState =>({
 				...prevState,
 				nav:{
+					...prevState.nav,
 					barheight: '60px',
 					logo:{
 						...prevState.nav.logo,
-						width:'180px'
+						width:'120px'
 					},
 				}
 				})
@@ -42,10 +65,10 @@ class Header extends React.Component{
 				...prevState,
 				nav:{
 					...prevState.nav,
-					barheight: '91px',
+					barheight: '71px',
 					logo:{
 						...prevState.nav.logo,
-						width:'250px'
+						width:'180px'
 					},
 
 				}
@@ -70,15 +93,15 @@ class Header extends React.Component{
 				
 				<Link to="/">
 					<div className="logo-div" href="/" style={this.state.nav.logo}>
-						<img className="header-logo" src={logo} alt="FoodieBells" />
+						<img className="header-logo" style={{color:'white',filter:'brightness(0)invert(0)'}}  src={logo} alt="RQACS" />
 					</div>
 					</Link>
 				<nav id="nav">
 					<ul className="link-items">
-						<li style={linkItemStyle}> <Link style={linkItemAStyle} to="/">Home</Link></li>
-						<li style={linkItemStyle}> <Link style={linkItemAStyle} to="/">About</Link></li>
-						<li style={linkItemStyle}> <Link style={linkItemAStyle} to="/">Services</Link></li>
-                        <li style={linkItemStyle}> <Link style={linkItemAStyle} to="/">Contact</Link></li>
+						{this.state.nav.links.map((l,key) => 
+							<li key={key} style={linkItemStyle}> <Link  onMouseEnter={(e)=>this.hoverIt(e,l.name,key)} onMouseLeave={(e)=>this.hoverIt(e,l.name)} style={{color:l.color,fontSize:'15px'}} to='/'>{l.name}</Link></li>
+						)}
+						
 					</ul>	
 				</nav>
 			</header>
