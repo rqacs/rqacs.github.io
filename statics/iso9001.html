@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <title>RQACS Inc</title>
+</head>
+<!--text-gray-800  bg-[url('./images/img/image-bg.png')] -->
+<body class="w-full text-nav_text h-screen relative  bg-cover bg-center"
+ style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('./images/img/image-bg.png');">
+     <!-- Navbar Section bg-[#f4f4f4]-->
+  <nav class="bg-nav text-nav_text p-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="text-xl font-bold">RQACS</a>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="block md:hidden text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Navigation Links -->
+        <ul id="menu" class="hidden md:flex space-x-4">
+            <li><a href="./index.html" class="hover:text-gray-400">Home</a></li>
+            <li class="relative group">
+              <button class="hover:text-gray-400">Services</button>
+              <div class="absolute left-0 mt-2 w-48 bg-white text-gray-900 rounded shadow-lg hidden group-hover:block">
+                  
+                  <a href="./iso9001.html" class="block px-4 py-2 hover:bg-gray-200">ISO 9001</a>
+                  <a href="./mdr.html" class="block px-4 py-2 hover:bg-gray-200">MDR</a>
+                  <a href="./mdsap.html" class="block px-4 py-2 hover:bg-gray-200">MDSAP</a>
+                  <a href="./iso13485.html" class="block px-4 py-2 hover:bg-gray-200">ISO 13485</a>
+                  <a href="./ce-marking.html" class="block px-4 py-2 hover:bg-gray-200">CE MARKING</a>
+                  <a href="./regulatoryaffairs.html" class="block px-4 py-2 hover:bg-gray-200">Regulatory Affairs</a>
+                  <a href="./qualityaffairs-md.html" class="block px-4 py-2 hover:bg-gray-200">Quality Affairs</a>
+                  <a href="./project-management.html" class="block px-4 py-2 hover:bg-gray-200">Project Management</a>
+                  <a href="./technical-files.html" class="block px-4 py-2 hover:bg-gray-200">Technical Files</a>
+                                    
+              </div>
+          </li>
+        </ul>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2">
+        <ul class="flex flex-col space-y-2 text-center">
+            <li><a href="#" class="block py-2 hover:bg-primary">Home</a></li>
+            <li class="relative">
+              <button id="mobile-dropdown-btn" class="hidden block w-full py-2 hover:bg-primary">Services</button>
+              <div id="mobile-dropdown-menu" class="hidden flex flex-col bg-primary text-white rounded">
+                <a href="./iso9001.html" class="block px-4 py-2 hover:bg-gray-200">ISO 9001</a>
+                <a href="./mdr.html" class="block px-4 py-2 hover:bg-gray-200">MDR</a>
+                <a href="./mdsap.html" class="block px-4 py-2 hover:bg-gray-200">MDSAP</a>
+                <a href="./iso13485.html" class="block px-4 py-2 hover:bg-gray-200">ISO 13485</a>
+                <a href="./ce-marking.html" class="block px-4 py-2 hover:bg-gray-200">CE MARKING</a>
+                <a href="./regulatoryaffairs.html" class="block px-4 py-2 hover:bg-gray-200">Regulatory Affairs</a>
+                <a href="./qualityaffairs-md.html" class="block px-4 py-2 hover:bg-gray-200">Quality Affairs</a>
+                <a href="./project-management.html" class="block px-4 py-2 hover:bg-gray-200">Project Management</a>
+                <a href="./technical-files.html" class="block px-4 py-2 hover:bg-gray-200">Technical Files</a>
+                
+              </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+  <!-- Services Section with Vertical Tabs -->
+  <section id="services" class="container mx-auto py-16 h-auto ">
+    <h2 class="mb-8 text-center text-3xl font-semibold">Quality - ISO 9001</h2>
+
+    <div class="md:flex">
+     
+      <div id="9001" class="tab-content text-medium  w-full rounded-lg bg-primary p-6 text-gray-500  dark:text-gray-400">
+        <div id="9001-intro" class="md:flex md:items-start md:flex-wrap space-y-4 md:space-y-0 md:space-x-4">
+          <div class="content-img md:w-[350px] lg:w-[400px] flex-shrink-0">
+            <img src="./images/img/iso-9001.jpeg" class="w-full h-auto rounded-lg shadow-md aspect-[4/3]">
+          </div>
+          
+          <div id="intro-text" class="md:flex-1">
+            <h3 class="mb-2 text-start font-bold text-gray-900 dark:text-white">What is ISO 9001?</h3>
+          <p class="mb-2">
+            ISO 9001 is the globally recognized standard for quality management systems. It offers a structured and practical approach to ensure that all activities within your business are controlled, with the goal of consistently meeting customer expectations and delivering high-quality products or services.
+          </p>
+          <p class="mb-2">
+            This standard is applicable to any business, regardless of size or industry, and can be applied to any product or service. By adopting ISO 9001, your company can improve processes, increase efficiency, and enhance customer satisfaction.
+          </p>
+          </div>
+          
+        </div>
+      
+      <h3 class="mb-2 text-center font-bold text-gray-900 dark:text-white">Benefits of Adopting ISO 9001:</h3>
+      <ul>
+          <li class="mb-2">
+              <strong class="font-bold text-gray-900 dark:text-white">Enhanced Reputation:</strong> ISO 9001 certification is globally recognized and demonstrates your commitment to quality, helping to build trust with customers and partners.
+          </li>
+          <li class="mb-2">
+              <strong class="font-bold text-gray-900 dark:text-white">Improved Efficiency:</strong> Streamline operations, reduce waste, and cut costs by focusing on continuous improvement and process optimization.
+          </li>
+          <li class="mb-2">
+              <strong class="font-bold text-gray-900 dark:text-white">Increased Customer Satisfaction:</strong> Ensure your products and services consistently meet or exceed customer expectations, leading to greater customer loyalty and retention.
+          </li>
+          <li class="mb-2">
+              <strong class="font-bold text-gray-900 dark:text-white">Stronger Employee Engagement:</strong> Clear roles and responsibilities, combined with a focus on improvement, boost employee motivation and performance.
+          </li>
+          <li class="mb-2">
+              <strong class="font-bold text-gray-900 dark:text-white">Competitive Advantage:</strong> Stand out in the market by showcasing your commitment to quality, helping you win more business and outperform competitors.
+          </li>
+          <li class="mb-2">
+              <strong class="font-bold text-gray-900 dark:text-white">Risk Management:</strong> Identify and address potential risks early, ensuring smoother operations and fewer disruptions.
+          </li>
+          <li class="mb-2">
+              <strong class="font-bold text-gray-900 dark:text-white">Compliance and Market Access:</strong> Meet regulatory requirements and open doors to new markets that require ISO 9001 certification.
+          </li>
+      </ul>
+      
+      <h3 class="mb-2 text-center text-gray-900 dark:text-white">Integrated Management Systems (IMS)</h3>
+      <p class="mb-2">
+          ISO 9001 provides a solid foundation for creating an Integrated Management System (IMS) by offering a unified approach to managing quality across all areas of your business. By adopting ISO 9001, you can align your quality management processes with other management systems, such as those for environmental, health and safety, or information security, ensuring streamlined operations and improved performance.
+      </p>
+      <p>
+          An IMS allows for the integration of various standards into a single, cohesive framework, reducing duplication of effort, improving efficiency, and ensuring that all systems work toward common business goals. This integration helps businesses reduce costs, manage risks more effectively, and maintain compliance with multiple regulations and standards, all while enhancing customer satisfaction and driving continuous improvement. We at RQACS can help you do just this!
+      </p>
+      
+      </div>
+      <div class="ml-4 hidden lg:block">
+        <ul class="flex-column space-y mb-4  space-y-4 text-sm font-medium text-gray-500 md:me-4 md:mb-0 dark:text-gray-400">
+          <li>
+            <a href="./iso9001.html" class="active  inline-flex w-full items-center rounded-lg  px-4 py-3 text-black font-bold bg-secondary">
+              <svg class="me-2 h-4 w-4 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              ISO 9001
+            </a>
+          </li>
+          <li >
+            <a href="./mdr.html" class="inline-flex w-full items-center rounded-lg  px-4 py-3 hover:bg-gray-100 hover:text-gray-900 bg-primary dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              MDR
+            </a>
+          </li>
+          
+          <li >
+            <a href="./mdsap.html" class="inline-flex w-full items-center rounded-lg px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-primary dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              MDSAP
+            </a>
+          </li>
+          <li>
+            <a href="./iso13485.html" class="inline-flex w-full items-center rounded-lg px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-primary dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              ISO 13485
+            </a>
+          </li>
+          <li>
+            <a href="./ce-marking.html" class="inline-flex w-full items-center rounded-lg px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-primary dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              CE MARKING</a
+            >
+          </li>
+          <li>
+            <a href="./regulatoryaffairs.html" class="inline-flex w-full items-center rounded-lg px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-primary dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              REGULATORY AFFAIRS</a
+            >
+          </li>
+          <li>
+            <a href="./qualityaffairs-md.html" class="inline-flex w-full items-center rounded-lg px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-primary dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              QUALITY AFFAIRS</a
+            >
+          </li>
+          <li>
+            <a href="./project-management.html" class="inline-flex w-full items-center rounded-lg px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-primary dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              PROJECT MANAGEMENT</a
+            >
+          </li>
+          <li>
+            <a href="./technical-files.html" class="inline-flex w-full items-center rounded-lg px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-primary dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              TECHNICAL FILES</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+      
+      
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+<footer class=" bg-[#252529] text-white text-sm py-6">
+  <div class="container mt-4 mb-4 mx-auto px-6 hidden sm:block">
+      <div class="grid grid-cols-1 sm:grid-cols-4 gap-6">
+          <div>
+              <ul class="space-y-2">
+                  <li class="font-bold text-lg">RQACS Inc.</li>
+                  <li>Regulatory/Quality/Assurance Consultancy Services</li>
+                  <li>Implementation and maintenance of Management Systems that meet the requirements of: ISO 9001, ISO 13485.</li>
+              </ul>
+          </div>
+          
+          <div>
+              <ul class="space-y-2">
+                  <li class="font-bold text-lg">Latest News</li>
+                  <li>Initial Launch of Website-</li>
+                  <li>November 28th 2024</li>
+              </ul>
+          </div>
+
+          <div>
+              <ul class="space-y-2">
+                  <li class="font-bold text-lg">Follow our Social Media</li>
+                  <li>
+                      <a href="#" class="flex items-center space-x-2">
+                          <i class="fab fa-twitter"></i>
+                          <span>@rqacs</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="flex items-center space-x-2">
+                          <i class="fab fa-facebook"></i>
+                          <span>@rqacs</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="flex items-center space-x-2">
+                          <i class="fab fa-instagram"></i>
+                          <span>@rqacs</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+
+          <div>
+              <ul class="space-y-2">
+                  <li class="font-bold text-lg">Contact Us</li>
+                  <li>Milton</li>
+                  <li>Ontario Canada L9T</li>
+                  <li>Ashford</li>
+                  <li>Middlesex England TW15</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="text-center text-sm mt-2 mb0  pt-4">
+      Copyright &copy; 2025 rqacs
+  </div>
+</footer>
+
+
+  <script src="./js/nav.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/tail.js"></script>
+</body>
+
+
+</html>

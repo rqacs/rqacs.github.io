@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <title>RQACS Inc</title>
+</head>
+
+<body class="bg-gray-50 text-gray-800 bg-[#f4f4f4]">
+     <!-- Navbar Section -->
+  <nav class="bg-gray-900 text-white p-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="text-xl font-bold">RQACS</a>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="block md:hidden text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Navigation Links -->
+        <ul id="menu" class="hidden md:flex space-x-4">
+            <li><a href="./index.html" class="hover:text-gray-400">Home</a></li>
+            <li class="relative group">
+              <button class="hover:text-gray-400">Services</button>
+              <div class="absolute left-0 mt-2 w-48 bg-white text-gray-900 rounded shadow-lg hidden group-hover:block">
+                  
+                  <a href="./iso9001.html" class="block px-4 py-2 hover:bg-gray-200">ISO 9001</a>
+                  <a href="./mdr.html" class="block px-4 py-2 hover:bg-gray-200">MDR</a>
+                  <a href="./mdsap.html" class="block px-4 py-2 hover:bg-gray-200">MDSAP</a>
+                  <a href="./iso13485.html" class="block px-4 py-2 hover:bg-gray-200">ISO 13485</a>
+                  <a href="./ce-marking.html" class="block px-4 py-2 hover:bg-gray-200">CE MARKING</a>
+                  <a href="./regulatoryaffairs.html" class="block px-4 py-2 hover:bg-gray-200">Regulatory Affairs</a>
+                  <a href="./qualityaffairs-md.html" class="block px-4 py-2 hover:bg-gray-200">Quality Affairs</a>
+                  <a href="./project-management.html" class="block px-4 py-2 hover:bg-gray-200">Project Management</a>
+                  <a href="./technical-files.html" class="block px-4 py-2 hover:bg-gray-200">Technical Files</a>
+                                    
+              </div>
+          </li>
+        </ul>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2">
+        <ul class="flex flex-col space-y-2 text-center">
+            <li><a href="#" class="block py-2 hover:bg-gray-800">Home</a></li>
+            <li class="relative">
+              <button id="mobile-dropdown-btn" class="hidden block w-full py-2 hover:bg-gray-800">Services</button>
+              <div id="mobile-dropdown-menu" class="hidden flex flex-col bg-gray-800 text-white rounded">
+                <a href="./iso9001.html" class="block px-4 py-2 hover:bg-gray-200">ISO 9001</a>
+                <a href="./mdr.html" class="block px-4 py-2 hover:bg-gray-200">MDR</a>
+                <a href="./mdsap.html" class="block px-4 py-2 hover:bg-gray-200">MDSAP</a>
+                <a href="./iso13485.html" class="block px-4 py-2 hover:bg-gray-200">ISO 13485</a>
+                <a href="./ce-marking.html" class="block px-4 py-2 hover:bg-gray-200">CE MARKING</a>
+                <a href="./regulatoryaffairs.html" class="block px-4 py-2 hover:bg-gray-200">Regulatory Affairs</a>
+                <a href="./qualityaffairs-md.html" class="block px-4 py-2 hover:bg-gray-200">Quality Affairs</a>
+                <a href="./project-management.html" class="block px-4 py-2 hover:bg-gray-200">Project Management</a>
+                <a href="./technical-files.html" class="block px-4 py-2 hover:bg-gray-200">Technical Files</a>
+                
+              </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+  <!-- Services Section with Vertical Tabs -->
+  <section id="services" class="container mx-auto py-16 h-auto ">
+    <h2 class="mb-8 text-center text-3xl font-semibold">CE Marking & UKCA Marking for Medical Devices</h2>
+
+    <div class="md:flex">
+      
+     
+      <div id="mdr" class="tab-content text-medium  w-full rounded-lg bg-gray-50 p-6 text-gray-500 dark:bg-gray-800 dark:text-gray-400">
+        <h3 class="mb-2 text-center font-bold text-gray-900 dark:text-white">What is What is CE Marking & UKCA Marking for Medical Devices?</h3>
+        <p class="mb-2">
+          Achieving CE Marking and UKCA Marking is crucial for placing your medical device on the European and UK markets, respectively. These marks indicate that your device complies with all applicable regulatory requirements, ensuring it meets the necessary safety, quality, and performance standards. We specialize in helping manufacturers navigate the complexities of obtaining both CE Marking and UKCA Marking for their medical devices, ensuring a smooth and efficient path to market.
+      </p>
+      
+      <h3 class="mb-2 mt-4 text-center font-bold text-gray-900 dark:text-white">CE Marking for Medical Devices (EU)</h3>
+      <p class="mb-2">
+          The CE Mark is required for medical devices to be sold within the European Union (EU) and European Economic Area (EEA). It indicates that the device meets the requirements of the Medical Device Regulation (MDR) (EU 2017/745) or In Vitro Diagnostic Regulation (IVDR) (EU 2017/746), ensuring it is safe, effective, and compliant with EU standards.
+      </p>
+      
+      <h3 class="mb-2 mt-4 text-center font-bold text-gray-900 dark:text-white">Key Steps to Achieve CE Marking:</h3>
+      <ol class="list-decimal pl-5 space-y-2">
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Device Classification:</strong> We help you determine the correct classification of your medical device (Class I, IIa, IIb, or III) to establish the appropriate route for CE Marking.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Risk Management:</strong> We assist in implementing a robust ISO 14971 risk management system, ensuring comprehensive risk identification, assessment, and mitigation.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Preparation of Technical Documentation:</strong> We support the creation of a detailed Technical File or Design Dossier, ensuring compliance with the MDR.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Clinical Evaluation:</strong> We help conduct a Clinical Evaluation that supports your device’s safety and performance claims through clinical trials or data review.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Conformity Assessment:</strong> We assist in navigating the conformity assessment process, which may involve engaging with a Notified Body for higher-risk devices.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Declaration of Conformity:</strong> We help you draft the Declaration of Conformity, certifying compliance with EU regulatory requirements.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Post-Market Surveillance:</strong> We support implementation of a PMS system, including vigilance reporting and periodic safety updates.
+          </li>
+      </ol>
+      
+      <h3 class="mb-2 mt-4 text-center font-bold text-gray-900 dark:text-white">UKCA Marking for Medical Devices (UK)</h3>
+      <p class="mb-2">
+          Following Brexit, the UK Conformity Assessed (UKCA) mark is now required for medical devices placed on the market in Great Britain. It ensures compliance with UK Medical Device Regulations 2002 (as amended).
+      </p>
+      
+      <h3 class="mb-2 text-center text-gray-900 dark:text-white">Key Steps to Achieve UKCA Marking:</h3>
+      <ol class="list-decimal pl-5 space-y-2">
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Device Classification:</strong> We guide you in determining the correct classification under UK regulations.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Technical Documentation:</strong> We support preparation of compliant Technical Documentation for UKCA certification.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Approved Body Engagement:</strong> For higher-risk devices, we facilitate the engagement process with a UK Approved Body.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Clinical Evaluation:</strong> We ensure compliance with UK clinical evidence requirements, supporting performance validation.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Declaration of Conformity:</strong> We assist in drafting the UKCA Declaration of Conformity for legal market access.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Post-Market Surveillance:</strong> We help maintain compliance with vigilance, adverse event reporting, and ongoing safety updates.
+          </li>
+      </ol>
+      
+      <h3 class="mb-2 mt-4 text-center font-bold text-gray-900 dark:text-white">Why Choose Us for CE & UKCA Marking?</h3>
+      <ul class="space-y-2">
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Expert Regulatory Guidance:</strong> We specialize in EU MDR and UK Medical Device Regulations, ensuring full compliance.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">End-to-End Support:</strong> We provide full support from classification to final submission for both CE and UKCA marking.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Global Market Access:</strong> Our guidance ensures compliance with both EU and UK regulations, expanding market opportunities.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Compliance Assurance:</strong> We ensure comprehensive documentation to avoid delays or regulatory setbacks.
+          </li>
+          <li>
+              <strong class="font-bold text-gray-900 dark:text-white">Post-Market Monitoring:</strong> We help establish surveillance systems to ensure ongoing product safety and performance.
+          </li>
+      </ul>
+      
+      <p class="mb-2 mt-4">
+          Let us simplify your path to CE and UKCA Marking, ensuring that your medical device meets all regulatory requirements for market access. With our expertise, you can confidently launch your device in both the EU and UK markets.
+      </p>
+      
+      </div>
+      <div class="ml-4 hidden lg:block">
+        <ul class="flex-column space-y mb-4  space-y-4 text-sm font-medium text-gray-500 md:me-4 md:mb-0 dark:text-gray-400">
+          <li>
+            <a href="./iso9001.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white" aria-current="page">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              ISO 9001
+            </a>
+          </li>
+          <li >
+            <a href="./mdr.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              MDR
+            </a>
+          </li>
+          
+          <li >
+            <a href="./mdsap.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              MDSAP
+            </a>
+          </li>
+          <li>
+            <a href="./iso13485.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              ISO 13485
+            </a>
+          </li>
+          <li>
+            <a href="./ce-marking.html" class="active  inline-flex w-full items-center rounded-lg bg-gray-200 px-4 py-3 text-black font-bold dark:bg-gray-300">
+              <svg class="me-2 h-4 w-4 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              CE MARKING</a
+            >
+          </li>
+          <li>
+            <a href="./regulatoryaffairs.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              REGULATORY AFFAIRS</a
+            >
+          </li>
+          <li>
+            <a href="./qualityaffairs-md.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              QUALITY AFFAIRS</a
+            >
+          </li>
+          <li>
+            <a href="./project-management.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              PROJECT MANAGEMENT</a
+            >
+          </li>
+          <li>
+            <a href="./technical-files.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+              </svg>
+              TECHNICAL FILES</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+      
+      
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-gray-800 text-white text-sm py-6">
+  <div class="container mt-4 mb-4 mx-auto px-6 hidden sm:block">
+      <div class="grid grid-cols-1 sm:grid-cols-4 gap-6">
+          <div>
+              <ul class="space-y-2">
+                  <li class="font-bold text-lg">RQACS Inc.</li>
+                  <li>Regulatory/Quality/Assurance Consultancy Services</li>
+                  <li>Implementation and maintenance of Management Systems that meet the requirements of: ISO 9001, ISO 13485.</li>
+              </ul>
+          </div>
+          
+          <div>
+              <ul class="space-y-2">
+                  <li class="font-bold text-lg">Latest News</li>
+                  <li>Initial Launch of Website-</li>
+                  <li>November 28th 2024</li>
+              </ul>
+          </div>
+
+          <div>
+              <ul class="space-y-2">
+                  <li class="font-bold text-lg">Follow our Social Media</li>
+                  <li>
+                      <a href="#" class="flex items-center space-x-2">
+                          <i class="fab fa-twitter"></i>
+                          <span>@rqacs</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="flex items-center space-x-2">
+                          <i class="fab fa-facebook"></i>
+                          <span>@rqacs</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="flex items-center space-x-2">
+                          <i class="fab fa-instagram"></i>
+                          <span>@rqacs</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+
+          <div>
+              <ul class="space-y-2">
+                  <li class="font-bold text-lg">Contact Us</li>
+                  <li>Milton</li>
+                  <li>Ontario Canada L9T</li>
+                  <li>Ashford</li>
+                  <li>Middlesex England TW15</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="text-center text-sm mt-2 mb0  pt-4">
+      Copyright &copy; 2025 rqacs
+  </div>
+</footer>
+
+
+  <script src="./js/nav.js"></script>
+</body>
+
+
+</html>
