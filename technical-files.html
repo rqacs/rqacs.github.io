@@ -2,72 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-    <title>RQACS Inc</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <title>RQACS Inc</title>
 </head>
 
-<body class="bg-gray-50 text-gray-800 bg-[#f4f4f4]">
-    <!-- Navbar Section -->
-    <nav class="bg-gray-900 text-white p-4">
-      <div class="max-w-7xl mx-auto flex justify-between items-center">
-          <!-- Logo -->
-          <a href="#" class="text-xl font-bold">RQACS</a>
-  
-          <!-- Mobile Menu Button -->
-          <button id="menu-toggle" class="block md:hidden text-white focus:outline-none">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                      d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-          </button>
-  
-          <!-- Navigation Links -->
-          <ul id="menu" class="hidden md:flex space-x-4">
-              <li><a href="./index.html" class="hover:text-gray-400">Home</a></li>
-              <li class="relative group">
-                <button class="hover:text-gray-400">Services</button>
-                <div class="absolute left-0 mt-2 w-48 bg-white text-gray-900 rounded shadow-lg hidden group-hover:block">
-                    
-                    <a href="./iso9001.html" class="block px-4 py-2 hover:bg-gray-200">ISO 9001</a>
-                    <a href="./mdr.html" class="block px-4 py-2 hover:bg-gray-200">MDR</a>
-                    <a href="./mdsap.html" class="block px-4 py-2 hover:bg-gray-200">MDSAP</a>
-                    <a href="./iso13485.html" class="block px-4 py-2 hover:bg-gray-200">ISO 13485</a>
-                    <a href="./ce-marking.html" class="block px-4 py-2 hover:bg-gray-200">CE MARKING</a>
-                    <a href="./regulatoryaffairs.html" class="block px-4 py-2 hover:bg-gray-200">Regulatory Affairs</a>
-                    <a href="./qualityaffairs-md.html" class="block px-4 py-2 hover:bg-gray-200">Quality Affairs</a>
-                    <a href="./project-management.html" class="block px-4 py-2 hover:bg-gray-200">Project Management</a>
-                    <a href="./technical-files.html" class="block px-4 py-2 hover:bg-gray-200">Technical Files</a>
-                                      
-                </div>
-            </li>
-          </ul>
-      </div>
-  
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden mt-2">
-          <ul class="flex flex-col space-y-2 text-center">
-              <li><a href="./index.html" class="block py-2 hover:bg-gray-800">Home</a></li>
-              <li class="relative">
-                <button id="mobile-dropdown-btn" class="hidden block w-full py-2 hover:bg-gray-800">Services</button>
-                <div id="mobile-dropdown-menu" class="hidden flex flex-col bg-gray-800 text-white rounded">
-                  <a href="./iso9001.html" class="block px-4 py-2 hover:bg-gray-200">ISO 9001</a>
-                  <a href="./mdr.html" class="block px-4 py-2 hover:bg-gray-200">MDR</a>
-                  <a href="./mdsap.html" class="block px-4 py-2 hover:bg-gray-200">MDSAP</a>
-                  <a href="./iso13485.html" class="block px-4 py-2 hover:bg-gray-200">ISO 13485</a>
-                  <a href="./ce-marking.html" class="block px-4 py-2 hover:bg-gray-200">CE MARKING</a>
-                  <a href="./regulatoryaffairs.html" class="block px-4 py-2 hover:bg-gray-200">Regulatory Affairs</a>
-                  <a href="./qualityaffairs-md.html" class="block px-4 py-2 hover:bg-gray-200">Quality Affairs</a>
-                  <a href="./project-management.html" class="block px-4 py-2 hover:bg-gray-200">Project Management</a>
-                  <a href="./technical-files.html" class="block px-4 py-2 hover:bg-gray-200">Technical Files</a>
-                  
-                </div>
-              </li>
-          </ul>
-      </div>
+<body class="w-full text-nav_text h-screen relative bg-cover bg-center"
+  style="background-image: linear-gradient(rgba(30, 58, 138, 0.5), rgba(30, 58, 138, 0.2)), url('./images/img/image-bg.png');">
+  <nav class='cf'>
+    <div class="brand">
+      <a href='./index.html#showcase'>RQACS</a>
+    </div>
+    <ul class='cf'>
+      <li>
+        <a href='./index.html#showcase'>Home</a>
+      </li>
+    </ul>
+    <a href='./index.html#showcase' id='openup'>RQACS</a>
   </nav>
 
   <!-- Services Section with Vertical Tabs -->
@@ -75,199 +32,268 @@
     <h2 class="mb-8 text-center text-3xl font-semibold">Technical Files</h2>
 
     <div class="md:flex">
-      
-     
-      <div id="mdr" class="tab-content text-medium  w-full rounded-lg bg-gray-50 p-6 text-gray-500 dark:bg-gray-800 dark:text-gray-400">
-        <h3 class="mb-4 text-center font-bold text-gray-900 dark:text-white">What are Technical Files?</h3>
 
 
-        <p class="mb-2">
-            A comprehensive Technical File is a critical component for achieving regulatory compliance and ensuring the marketability of your medical device. Under regulations like the Medical Device Regulation (EU) 2017/745 (MDR) and FDA requirements, having a complete and well-organized Technical File is essential to demonstrate that your medical device meets safety, performance, and quality standards.
-        </p>
-        <p class="mb-2">
-            We specialize in the preparation, maintenance, and submission of Technical Files that adhere to the strict requirements set forth by regulatory bodies. Our experienced team ensures that your Technical File is accurate, comprehensive, and up-to-date, helping you navigate the regulatory approval process with confidence and efficiency.
-        </p>
-        
-        <h3 class="mb-2 mt-4 text-center font-bold text-gray-900 dark:text-white">Key Elements of a Medical Device Technical File:</h3>
+      <div id="mdr"
+        class="tab-content text-medium  w-full rounded-lg bg-gray-50 p-6 text-gray-500 dark:bg-gray-800 dark:text-gray-400">
+        <div id="technical-files-intro" class="md:flex md:items-start md:flex-wrap space-y-4 md:space-y-0 md:space-x-4">
+          <div class="content-img md:w-[350px] lg:w-[400px] flex-shrink-0">
+            <img src="./images/img/technical-files.jpeg" class="w-full h-auto rounded-lg shadow-md aspect-[4/3]">
+          </div>
+
+          <div id="intro-text" class="md:flex-1">
+            <h3 class="mb-2 text-start font-bold text-gray-900 dark:text-white">What are Technical Files?</h3>
+            <p class="mb-2">
+              A comprehensive Technical File is a critical component for achieving regulatory compliance and ensuring
+              the marketability of your medical device. Under regulations like the Medical Device Regulation (EU)
+              2017/745 (MDR) and FDA requirements, having a complete and well-organized Technical File is essential to
+              demonstrate that your medical device meets safety, performance, and quality standards.
+            </p>
+            <p class="mb-2">
+              We specialize in the preparation, maintenance, and submission of Technical Files that adhere to the strict
+              requirements set forth by regulatory bodies. Our experienced team ensures that your Technical File is
+              accurate, comprehensive, and up-to-date, helping you navigate the regulatory approval process with
+              confidence and efficiency.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="mb-2 mt-4 text-center font-bold text-gray-900 dark:text-white">Key Elements of a Medical Device
+          Technical File:</h3>
         <ol class="list-decimal pl-5 space-y-2 m-4">
-            <li>
-                <strong class="font-bold text-gray-900 dark:text-white">Device Description and Specifications:</strong> This section includes a detailed description of the device, its intended use, and its classification. We ensure that all device specifications, including technical features, materials, and components, are thoroughly documented.
-            </li>
-            <li>
-                <strong class="font-bold text-gray-900 dark:text-white">Design and Manufacturing Information:</strong> We help document the design and manufacturing processes, including the manufacturing facility and processes involved.
-            </li>
-            <li>
-                <strong class="font-bold text-gray-900 dark:text-white">Risk Management:</strong> Compliance with ISO 14971 is essential. We assist in developing a comprehensive risk management plan to ensure potential risks throughout the product lifecycle are identified and addressed.
-            </li>
-            <li>
-                <strong class="font-bold text-gray-900 dark:text-white">Clinical Evaluation and Evidence:</strong> Depending on device classification, a Clinical Evaluation Report (CER) may be required to demonstrate safety and effectiveness.
-            </li>
-            <li>
-                <strong class="font-bold text-gray-900 dark:text-white">Performance and Safety Testing:</strong> We ensure that relevant testing (e.g., biocompatibility, electrical safety, sterility) is properly documented and included.
-            </li>
+          <li>
+            <strong class="font-bold text-gray-900 dark:text-white">Device Description and Specifications:</strong> This
+            section includes a detailed description of the device, its intended use, and its classification. We ensure
+            that all device specifications, including technical features, materials, and components, are thoroughly
+            documented.
+          </li>
+          <li>
+            <strong class="font-bold text-gray-900 dark:text-white">Design and Manufacturing Information:</strong> We
+            help document the design and manufacturing processes, including the manufacturing facility and processes
+            involved.
+          </li>
+          <li>
+            <strong class="font-bold text-gray-900 dark:text-white">Risk Management:</strong> Compliance with ISO 14971
+            is essential. We assist in developing a comprehensive risk management plan to ensure potential risks
+            throughout the product lifecycle are identified and addressed.
+          </li>
+          <li>
+            <strong class="font-bold text-gray-900 dark:text-white">Clinical Evaluation and Evidence:</strong> Depending
+            on device classification, a Clinical Evaluation Report (CER) may be required to demonstrate safety and
+            effectiveness.
+          </li>
+          <li>
+            <strong class="font-bold text-gray-900 dark:text-white">Performance and Safety Testing:</strong> We ensure
+            that relevant testing (e.g., biocompatibility, electrical safety, sterility) is properly documented and
+            included.
+          </li>
         </ol>
-        
-        <h3 class="mb-2 mt-2 text-center font-bold text-gray-900 dark:text-white">Why Choose Us for Your Technical File Needs?</h3>
+
+        <h3 class="mb-2 mt-2 text-center font-bold text-gray-900 dark:text-white">Why Choose Us for Your Technical File
+          Needs?</h3>
         <ul class="space-y-2 m-4">
-            <li>
-                <strong class="font-bold text-gray-900 dark:text-white">Expertise in Regulatory Requirements:</strong> Our team has in-depth knowledge of regulatory requirements across multiple regions.
-            </li>
-            <li>
-                <strong class="font-bold text-gray-900 dark:text-white">Efficient Process:</strong> Our streamlined approach ensures you save time while maintaining compliance.
-            </li>
+          <li>
+            <strong class="font-bold text-gray-900 dark:text-white">Expertise in Regulatory Requirements:</strong> Our
+            team has in-depth knowledge of regulatory requirements across multiple regions.
+          </li>
+          <li>
+            <strong class="font-bold text-gray-900 dark:text-white">Efficient Process:</strong> Our streamlined approach
+            ensures you save time while maintaining compliance.
+          </li>
         </ul>
-        
+
         <p class="mb-2">
-            Let us help you prepare a compliant, thorough, and efficient Technical File that meets regulatory requirements, accelerates market access, and supports the long-term success of your medical device.
+          Let us help you prepare a compliant, thorough, and efficient Technical File that meets regulatory
+          requirements, accelerates market access, and supports the long-term success of your medical device.
         </p>
-        
+
       </div>
       <div class="ml-4 hidden lg:block">
-        <ul class="flex-column space-y mb-4  space-y-4 text-sm font-medium text-gray-500 md:me-4 md:mb-0 dark:text-gray-400">
+        <ul
+          class="flex-column space-y mb-4  space-y-4 text-sm font-medium text-gray-500 md:me-4 md:mb-0 dark:text-gray-400">
           <li>
-            <a href="./iso9001.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white" aria-current="page">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./iso9001.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"
+              aria-current="page">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
               ISO 9001
             </a>
           </li>
-          <li >
-            <a href="./mdr.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+          <li>
+            <a href="./mdr.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
               MDR
             </a>
           </li>
-          
-          <li >
-            <a href="./mdsap.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+
+          <li>
+            <a href="./mdsap.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
               MDSAP
             </a>
           </li>
           <li>
-            <a href="./iso13485.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./iso13485.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
               ISO 13485
             </a>
           </li>
           <li>
-            <a href="./ce-marking.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./ce-marking.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
-              CE MARKING</a
-            >
+              CE MARKING</a>
           </li>
           <li>
-            <a href="./regulatoryaffairs.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./regulatoryaffairs.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
-              REGULATORY AFFAIRS</a
-            >
+              REGULATORY AFFAIRS</a>
           </li>
           <li>
-            <a href="./qualityaffairs-md.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./qualityaffairs-md.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
-              QUALITY AFFAIRS</a
-            >
+              QUALITY AFFAIRS</a>
           </li>
           <li>
-            <a href="./project-management.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./project-management.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
-              PROJECT MANAGEMENT</a
-            >
+              PROJECT MANAGEMENT</a>
           </li>
           <li>
-            <a href="./technical-files.html" class="active  inline-flex w-full items-center rounded-lg bg-gray-200 px-4 py-3 text-black font-bold dark:bg-gray-300">
-              <svg class="me-2 h-4 w-4 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./technical-files.html"
+              class="active  inline-flex w-full items-center rounded-lg bg-gray-200 px-4 py-3 text-black font-bold dark:bg-gray-300">
+              <svg class="me-2 h-4 w-4 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
-              TECHNICAL FILES</a
-            >
+              TECHNICAL FILES</a>
           </li>
-          
+
         </ul>
       </div>
-      
-      
+
+
     </div>
 
   </section>
 
-  <!-- Footer -->
-<footer class="bg-gray-800 text-white text-sm py-6">
-  <div class="container mt-4 mb-4 mx-auto px-6 hidden sm:block">
-      <div class="grid grid-cols-1 sm:grid-cols-4 gap-6">
-          <div>
-              <ul class="space-y-2">
-                  <li class="font-bold text-lg">RQACS Inc.</li>
-                  <li>Regulatory/Quality/Assurance Consultancy Services</li>
-                  <li>Implementation and maintenance of Management Systems that meet the requirements of: ISO 9001, ISO 13485.</li>
-              </ul>
-          </div>
-          
-          <div>
-              <ul class="space-y-2">
-                  <li class="font-bold text-lg">Latest News</li>
-                  <li>Initial Launch of Website-</li>
-                  <li>November 28th 2024</li>
-              </ul>
-          </div>
+  <footer class="section-footer">
+    <div class="container hide-on-small">
+      <div class="footer-cols">
+        <ul>
+          <li>RQACS Inc.</li>
+          <li>
+            Regulatory/Quality/Assurance Consultancy Services
+          </li>
+          <li>
+            Implementation and maintenance of Management Systems that meet the requirements of: ISO 9001, ISO 13485.
+          </li>
 
-          <div>
-              <ul class="space-y-2">
-                  <li class="font-bold text-lg">Follow our Social Media</li>
-                  <li>
-                      <a href="#" class="flex items-center space-x-2">
-                          <i class="fab fa-twitter"></i>
-                          <span>@rqacs</span>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" class="flex items-center space-x-2">
-                          <i class="fab fa-facebook"></i>
-                          <span>@rqacs</span>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" class="flex items-center space-x-2">
-                          <i class="fab fa-instagram"></i>
-                          <span>@rqacs</span>
-                      </a>
-                  </li>
-              </ul>
-          </div>
+        </ul>
 
-          <div>
-              <ul class="space-y-2">
-                  <li class="font-bold text-lg">Contact Us</li>
-                  <li>Milton</li>
-                  <li>Ontario Canada L9T</li>
-                  <li>Ashford</li>
-                  <li>Middlesex England TW15</li>
-              </ul>
-          </div>
+        <ul>
+          <li>Latest News</li>
+          <li>
+            Initial Launch of Website-
+          </li>
+          <li>
+            November 28th 2024
+          </li>
+          <li>
+            <a href="#">&nbsp;</a>
+          </li>
+
+        </ul>
+
+        <ul>
+          <li>Follow our Social Media</li>
+          <li>
+            <a href="#"><i class="fab fa-twitter "></i>: @rqacs</a>
+          </li>
+          <li>
+            <a href="#">&nbsp;</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook "></i>: @rqacs</a>
+          </li>
+          <li>
+            <a href="#">&nbsp;</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram "></i>: @rqacs</a>
+          </li>
+
+        </ul>
+
+        <ul>
+          <li>Contact Us</li>
+          <li>
+            Milton
+          </li>
+          <li>
+            Ontario Canada L9T
+          </li>
+          <li>
+            <a href="#">&nbsp;</a>
+          </li>
+          <li>
+            Ashford
+          </li>
+          <li>
+            Middlesex England TW15
+          </li>
+        </ul>
+
       </div>
-  </div>
-  <div class="text-center text-sm mt-2 mb0  pt-4">
+    </div>
+    <div class="footer-bottom text-center">
       Copyright &copy; 2025 rqacs
-  </div>
-</footer>
+    </div>
+  </footer>
 
-<script src="js/nav.js"></script>
-  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/my.js"></script>
 </body>
 
 

@@ -2,288 +2,343 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-    <title>RQACS Inc</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <title>RQACS Inc</title>
 </head>
 
-<body class="bg-gray-50 text-gray-800 bg-[#f4f4f4]" >
-    <!-- Navbar Section -->
-  <nav class="bg-[#333] text-white p-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <!-- Logo -->
-        <a href="#" class="text-xl font-bold">RQACS</a>
-
-        <!-- Mobile Menu Button -->
-        <button id="menu-toggle" class="block md:hidden text-white focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                    d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-
-        <!-- Navigation Links -->
-        <ul id="menu" class="hidden md:flex space-x-4">
-            <li><a href="./index.html" class="hover:text-gray-400">Home</a></li>
-            <li class="relative group">
-              <button class="hover:text-gray-400">Services</button>
-              <div class="absolute left-0 mt-2 w-48 bg-white text-gray-900 rounded shadow-lg hidden group-hover:block">
-                  
-                  <a href="./iso9001.html" class="block px-4 py-2 hover:bg-gray-200">ISO 9001</a>
-                  <a href="./mdr.html" class="block px-4 py-2 hover:bg-gray-200">MDR</a>
-                  <a href="./mdsap.html" class="block px-4 py-2 hover:bg-gray-200">MDSAP</a>
-                  <a href="./iso13485.html" class="block px-4 py-2 hover:bg-gray-200">ISO 13485</a>
-                  <a href="./ce-marking.html" class="block px-4 py-2 hover:bg-gray-200">CE MARKING</a>
-                  <a href="./regulatoryaffairs.html" class="block px-4 py-2 hover:bg-gray-200">Regulatory Affairs</a>
-                  <a href="./qualityaffairs-md.html" class="block px-4 py-2 hover:bg-gray-200">Quality Affairs</a>
-                  <a href="./project-management.html" class="block px-4 py-2 hover:bg-gray-200">Project Management</a>
-                  <a href="./technical-files.html" class="block px-4 py-2 hover:bg-gray-200">Technical Files</a>
-                                    
-              </div>
-          </li>
-        </ul>
+<body class="w-full text-nav_text h-screen relative bg-cover bg-center"
+  style="background-image: linear-gradient(rgba(30, 58, 138, 0.5), rgba(30, 58, 138, 0.2)), url('./images/img/image-bg.png');">
+  <nav class='cf'>
+    <div class="brand">
+      <a href='./index.html#showcase'>RQACS</a>
     </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden mt-2">
-        <ul class="flex flex-col space-y-2 text-center">
-            <li><a href="#" class="block py-2 hover:bg-gray-800">Home</a></li>
-            <li class="relative">
-              <button id="mobile-dropdown-btn" class="hidden block w-full py-2 hover:bg-gray-800">Services</button>
-              <div id="mobile-dropdown-menu" class="hidden flex flex-col bg-gray-800 text-white rounded">
-                <a href="./iso9001.html" class="block px-4 py-2 hover:bg-gray-200">ISO 9001</a>
-                <a href="./mdr.html" class="block px-4 py-2 hover:bg-gray-200">MDR</a>
-                <a href="./mdsap.html" class="block px-4 py-2 hover:bg-gray-200">MDSAP</a>
-                <a href="./iso13485.html" class="block px-4 py-2 hover:bg-gray-200">ISO 13485</a>
-                <a href="./ce-marking.html" class="block px-4 py-2 hover:bg-gray-200">CE MARKING</a>
-                <a href="./regulatoryaffairs.html" class="block px-4 py-2 hover:bg-gray-200">Regulatory Affairs</a>
-                <a href="./qualityaffairs-md.html" class="block px-4 py-2 hover:bg-gray-200">Quality Affairs</a>
-                <a href="./project-management.html" class="block px-4 py-2 hover:bg-gray-200">Project Management</a>
-                <a href="./technical-files.html" class="block px-4 py-2 hover:bg-gray-200">Technical Files</a>
-                
-              </div>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <ul class='cf'>
+      <li>
+        <a href='./index.html#showcase'>Home</a>
+      </li>
+    </ul>
+    <a href='./index.html#showcase' id='openup'>RQACS</a>
+  </nav>
   <!-- Services Section with Vertical Tabs -->
   <section id="services" class="container mx-auto py-16 h-auto ">
     <h2 class="mb-8 text-center text-3xl font-semibold">Medical Device Regulation (EU) 2017/745 (MDR)</h2>
 
     <div class="md:flex">
-      
-     
-      <div id="mdr" class="tab-content text-medium  w-full rounded-lg bg-gray-50 p-6 text-gray-500 dark:bg-gray-800 dark:text-gray-400">
-        <h3 class="mb-2 text-center font-bold text-gray-900 dark:text-white">What is Medical Device Regulation (MDR)?</h3>
-        <p class="mb-2">
-          The Medical Device Regulation (EU) 2017/745 (MDR) is the cornerstone of medical device legislation in the European Union, ensuring the safety and performance of medical devices sold within the EU market. The MDR came into full effect on <strong>May 26, 2021</strong>, replacing the previous Medical Device Directive (MDD) and bringing about stricter requirements to enhance patient safety and device quality.
-      </p>
-      <p class="mb-2">
-          We specialize in guiding manufacturers through the complexities of the MDR, ensuring that your medical devices are compliant with the latest regulatory requirements. Our expert team helps you navigate every aspect of the MDR, from pre-market approval to post-market surveillance, facilitating smoother market access and reducing risks associated with non-compliance.
-      </p>
 
-      <h3 class="mb-2 text-center font-bold text-white">Key Aspects of the MDR We Help You Navigate:</h3>
-      <ul>
-          <li class="mb-2">
-              <strong class="font-bold text-gray-900 dark:text-white">Device Classification & Conformity Assessment:</strong> Under the MDR, devices are classified into four risk categories (Class I, IIa, IIb, and III). We assist you in determining the correct classification for your medical device and help you choose the appropriate conformity assessment route, including working with Notified Bodies for higher-risk devices.
-          </li>
-          <li class="mb-2">
-              <strong class="font-bold text-gray-900 dark:text-white">Clinical Evidence & Evaluation:</strong> The MDR mandates comprehensive clinical evaluation for medical devices to demonstrate safety and effectiveness. Our team supports you in conducting clinical trials, preparing clinical evaluation reports (CER), and ensuring your product meets the clinical data requirements necessary for regulatory submission.
-          </li>
-          <li class="mb-2">
-              <strong class="font-bold text-gray-900 dark:text-white">Post-Market Surveillance (PMS):</strong> The MDR places significant emphasis on post-market surveillance to monitor the safety and performance of medical devices once they are on the market. We help you establish effective PMS systems, including adverse event reporting, vigilance systems, and periodic safety update reports (PSURs) to ensure ongoing compliance and patient safety.
-          </li>
-          <li class="mb-2">
-              <strong class="font-bold text-gray-900 dark:text-white">Unique Device Identification (UDI):</strong> The MDR introduces the requirement for Unique Device Identification (UDI) for traceability purposes. We guide you through the process of implementing a UDI system, ensuring compliance with both the MDR and global traceability standards.
-          </li>
-          <li class="mb-2">
-              <strong class="font-bold text-gray-900 dark:text-white">Technical Documentation & Files:</strong> We assist in creating and maintaining the necessary technical documentation and device dossiers required for MDR compliance. Our team ensures that all documentation is complete, accurate, and up-to-date, covering design, manufacturing processes, risk management, and clinical data.
-          </li>
-          <li class="mb-2">
-              <strong class="font-bold text-gray-900 dark:text-white">Notified Body Engagement:</strong> For higher-risk devices, engagement with a Notified Body is required under the MDR. We help you prepare for and manage the Notified Body review process, ensuring smooth audits and successful certification.
-          </li>
-          <li class="mb-2">
-              <strong class="font-bold text-gray-900 dark:text-white">Labeling & Instructions for Use (IFU):</strong> The MDR has specific requirements for labeling and instructions for use, including mandatory warnings, symbols, and information regarding the device’s intended use. We help ensure that your product labeling complies with MDR requirements and meets the needs of healthcare professionals and patients.
-          </li>
-          <li class="mb-2">
-              <strong class=" font-bold text-gray-900 dark:text-white">Vigilance & Reporting Obligations:</strong> The MDR requires manufacturers to actively monitor and report on the safety of their devices through vigilance systems. We support the establishment of robust vigilance processes, ensuring timely reporting of serious incidents, field safety corrective actions (FSCA), and corrective and preventive actions (CAPA).
-          </li>
-          <li class="mb-2">
-              <strong class=" font-bold text-gray-900 dark:text-white">Human Factors & Usability Engineering:</strong> The MDR highlights the importance of usability in ensuring that medical devices are safe and effective for users. We assist with usability studies, risk assessments, and human factors engineering to minimize user-related risks.
-          </li>
-          <li class="mb-2">
-              <strong class=" font-bold text-gray-900 dark:text-white">Transitional Provisions & Legacy Devices:</strong> If your device was previously certified under the MDD, we provide guidance on how to transition to the MDR requirements. This includes ensuring that legacy devices are updated to meet the new regulatory standards and helping with any necessary re-certification.
-          </li>
-      </ul>
 
-      <h3 class="mb-2 text-lg text-center font-bold text-gray-900 dark:text-white">Why Choose Us for MDR Compliance?</h3>
-      <ul>
+      <div id="mdr"
+        class="tab-content text-medium  w-full rounded-lg bg-gray-50 p-6 text-gray-500 dark:bg-gray-800 dark:text-gray-400">
+        <div id="mdr-intro" class="md:flex md:items-start md:flex-wrap space-y-4 md:space-y-0 md:space-x-4">
+          <div class="content-img md:w-[350px] lg:w-[400px] flex-shrink-0">
+            <img src="./images/img/mdr.jpeg" class="w-full h-auto rounded-lg shadow-md aspect-[4/3]">
+          </div>
+
+          <div id="intro-text" class="md:flex-1">
+            <h3 class="mb-2 text-start font-bold text-gray-900 dark:text-white">What is Medical Device Regulation (MDR)?
+            </h3>
+            <p class="mb-2">
+              The Medical Device Regulation (EU) 2017/745 (MDR) is the cornerstone of medical device legislation in the
+              European Union, ensuring the safety and performance of medical devices sold within the EU market. The MDR
+              came into full effect on <strong>May 26, 2021</strong>, replacing the previous Medical Device Directive
+              (MDD) and bringing about stricter requirements to enhance patient safety and device quality.
+            </p>
+            <p class="mb-2">
+              We specialize in guiding manufacturers through the complexities of the MDR, ensuring that your medical
+              devices are compliant with the latest regulatory requirements. Our expert team helps you navigate every
+              aspect of the MDR, from pre-market approval to post-market surveillance, facilitating smoother market
+              access and reducing risks associated with non-compliance.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="mb-2 text-center font-bold text-white">Key Aspects of the MDR We Help You Navigate:</h3>
+        <ul>
           <li class="mb-2">
-              <strong class="text-gray-900 dark:text-white">Expert Guidance:</strong> Our team of experienced regulatory professionals has a deep understanding of the MDR and the nuances of medical device regulations across the EU.
+            <strong class="font-bold text-gray-900 dark:text-white">Device Classification & Conformity
+              Assessment:</strong> Under the MDR, devices are classified into four risk categories (Class I, IIa, IIb,
+            and III). We assist you in determining the correct classification for your medical device and help you
+            choose the appropriate conformity assessment route, including working with Notified Bodies for higher-risk
+            devices.
           </li>
           <li class="mb-2">
-              <strong class="text-gray-900 dark:text-white">End-to-End Support:</strong> From initial planning and classification to post-market surveillance, we offer end-to-end support, ensuring your devices are always in compliance with the latest regulatory requirements.
+            <strong class="font-bold text-gray-900 dark:text-white">Clinical Evidence & Evaluation:</strong> The MDR
+            mandates comprehensive clinical evaluation for medical devices to demonstrate safety and effectiveness. Our
+            team supports you in conducting clinical trials, preparing clinical evaluation reports (CER), and ensuring
+            your product meets the clinical data requirements necessary for regulatory submission.
           </li>
           <li class="mb-2">
-              <strong class="text-gray-900 dark:text-white">Efficient Market Access:</strong> We help accelerate your time to market by ensuring all aspects of MDR compliance are covered, enabling a smooth regulatory submission process.
+            <strong class="font-bold text-gray-900 dark:text-white">Post-Market Surveillance (PMS):</strong> The MDR
+            places significant emphasis on post-market surveillance to monitor the safety and performance of medical
+            devices once they are on the market. We help you establish effective PMS systems, including adverse event
+            reporting, vigilance systems, and periodic safety update reports (PSURs) to ensure ongoing compliance and
+            patient safety.
           </li>
           <li class="mb-2">
-              <strong class="text-gray-900 dark:text-white">Risk Mitigation:</strong> Our comprehensive approach helps you identify and mitigate risks early, ensuring that your devices meet the highest standards of safety and effectiveness throughout their lifecycle.
+            <strong class="font-bold text-gray-900 dark:text-white">Unique Device Identification (UDI):</strong> The MDR
+            introduces the requirement for Unique Device Identification (UDI) for traceability purposes. We guide you
+            through the process of implementing a UDI system, ensuring compliance with both the MDR and global
+            traceability standards.
           </li>
-      </ul>
-      <p>
-          Let us simplify your MDR compliance journey, helping you bring safe, effective, and compliant medical devices to market with confidence. With our regulatory expertise, we ensure that your product meets all necessary requirements, giving you peace of mind in an increasingly complex regulatory environment.
-      </p>
+          <li class="mb-2">
+            <strong class="font-bold text-gray-900 dark:text-white">Technical Documentation & Files:</strong> We assist
+            in creating and maintaining the necessary technical documentation and device dossiers required for MDR
+            compliance. Our team ensures that all documentation is complete, accurate, and up-to-date, covering design,
+            manufacturing processes, risk management, and clinical data.
+          </li>
+          <li class="mb-2">
+            <strong class="font-bold text-gray-900 dark:text-white">Notified Body Engagement:</strong> For higher-risk
+            devices, engagement with a Notified Body is required under the MDR. We help you prepare for and manage the
+            Notified Body review process, ensuring smooth audits and successful certification.
+          </li>
+          <li class="mb-2">
+            <strong class="font-bold text-gray-900 dark:text-white">Labeling & Instructions for Use (IFU):</strong> The
+            MDR has specific requirements for labeling and instructions for use, including mandatory warnings, symbols,
+            and information regarding the device’s intended use. We help ensure that your product labeling complies with
+            MDR requirements and meets the needs of healthcare professionals and patients.
+          </li>
+          <li class="mb-2">
+            <strong class=" font-bold text-gray-900 dark:text-white">Vigilance & Reporting Obligations:</strong> The MDR
+            requires manufacturers to actively monitor and report on the safety of their devices through vigilance
+            systems. We support the establishment of robust vigilance processes, ensuring timely reporting of serious
+            incidents, field safety corrective actions (FSCA), and corrective and preventive actions (CAPA).
+          </li>
+          <li class="mb-2">
+            <strong class=" font-bold text-gray-900 dark:text-white">Human Factors & Usability Engineering:</strong> The
+            MDR highlights the importance of usability in ensuring that medical devices are safe and effective for
+            users. We assist with usability studies, risk assessments, and human factors engineering to minimize
+            user-related risks.
+          </li>
+          <li class="mb-2">
+            <strong class=" font-bold text-gray-900 dark:text-white">Transitional Provisions & Legacy Devices:</strong>
+            If your device was previously certified under the MDD, we provide guidance on how to transition to the MDR
+            requirements. This includes ensuring that legacy devices are updated to meet the new regulatory standards
+            and helping with any necessary re-certification.
+          </li>
+        </ul>
+
+        <h3 class="mb-2 text-lg text-center font-bold text-gray-900 dark:text-white">Why Choose Us for MDR Compliance?
+        </h3>
+        <ul>
+          <li class="mb-2">
+            <strong class="text-gray-900 dark:text-white">Expert Guidance:</strong> Our team of experienced regulatory
+            professionals has a deep understanding of the MDR and the nuances of medical device regulations across the
+            EU.
+          </li>
+          <li class="mb-2">
+            <strong class="text-gray-900 dark:text-white">End-to-End Support:</strong> From initial planning and
+            classification to post-market surveillance, we offer end-to-end support, ensuring your devices are always in
+            compliance with the latest regulatory requirements.
+          </li>
+          <li class="mb-2">
+            <strong class="text-gray-900 dark:text-white">Efficient Market Access:</strong> We help accelerate your time
+            to market by ensuring all aspects of MDR compliance are covered, enabling a smooth regulatory submission
+            process.
+          </li>
+          <li class="mb-2">
+            <strong class="text-gray-900 dark:text-white">Risk Mitigation:</strong> Our comprehensive approach helps you
+            identify and mitigate risks early, ensuring that your devices meet the highest standards of safety and
+            effectiveness throughout their lifecycle.
+          </li>
+        </ul>
+        <p>
+          Let us simplify your MDR compliance journey, helping you bring safe, effective, and compliant medical devices
+          to market with confidence. With our regulatory expertise, we ensure that your product meets all necessary
+          requirements, giving you peace of mind in an increasingly complex regulatory environment.
+        </p>
       </div>
       <div class="ml-4 hidden lg:block">
-        <ul class="flex-column space-y mb-4  space-y-4 text-sm font-medium text-gray-500 md:me-4 md:mb-0 dark:text-gray-400">
+        <ul
+          class="flex-column space-y mb-4  space-y-4 text-sm font-medium text-gray-500 md:me-4 md:mb-0 dark:text-gray-400">
           <li>
-            <a href="./iso9001.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white" aria-current="page">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./iso9001.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"
+              aria-current="page">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
               ISO 9001
             </a>
           </li>
-          <li >
-            <a href="./mdr.html" class="active  inline-flex w-full items-center rounded-lg bg-gray-200 px-4 py-3 text-black font-bold dark:bg-gray-300">
-              <svg class="me-2 h-4 w-4 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+          <li>
+            <a href="./mdr.html"
+              class="active  inline-flex w-full items-center rounded-lg bg-gray-200 px-4 py-3 text-black font-bold dark:bg-gray-300">
+              <svg class="me-2 h-4 w-4 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
               MDR
             </a>
           </li>
-          
-          <li >
-            <a href="./mdsap.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+
+          <li>
+            <a href="./mdsap.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
               MDSAP
             </a>
           </li>
           <li>
-            <a href="./iso13485.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./iso13485.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
               ISO 13485
             </a>
           </li>
           <li>
-            <a href="./ce-marking.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./ce-marking.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
-              CE MARKING</a
-            >
+              CE MARKING</a>
           </li>
           <li>
-            <a href="./regulatoryaffairs.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./regulatoryaffairs.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
-              REGULATORY AFFAIRS</a
-            >
+              REGULATORY AFFAIRS</a>
           </li>
           <li>
-            <a href="./qualityaffairs-md.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./qualityaffairs-md.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
-              QUALITY AFFAIRS</a
-            >
+              QUALITY AFFAIRS</a>
           </li>
           <li>
-            <a href="./project-management.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./project-management.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
-              PROJECT MANAGEMENT</a
-            >
+              PROJECT MANAGEMENT</a>
           </li>
           <li>
-            <a href="./technical-files.html" class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
+            <a href="./technical-files.html"
+              class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" />
               </svg>
-              TECHNICAL FILES</a
-            >
+              TECHNICAL FILES</a>
           </li>
-          
+
         </ul>
       </div>
-      
-      
+
+
     </div>
 
   </section>
 
-  <!-- Footer -->
-<footer class="bg-gray-800 text-white text-sm py-6">
-  <div class="container mt-4 mb-4 mx-auto px-6 hidden sm:block">
-      <div class="grid grid-cols-1 sm:grid-cols-4 gap-6">
-          <div>
-              <ul class="space-y-2">
-                  <li class="font-bold text-lg">RQACS Inc.</li>
-                  <li>Regulatory/Quality/Assurance Consultancy Services</li>
-                  <li>Implementation and maintenance of Management Systems that meet the requirements of: ISO 9001, ISO 13485.</li>
-              </ul>
-          </div>
-          
-          <div>
-              <ul class="space-y-2">
-                  <li class="font-bold text-lg">Latest News</li>
-                  <li>Initial Launch of Website-</li>
-                  <li>November 28th 2024</li>
-              </ul>
-          </div>
+  <footer class="section-footer">
+    <div class="container hide-on-small">
+      <div class="footer-cols">
+        <ul>
+          <li>RQACS Inc.</li>
+          <li>
+            Regulatory/Quality/Assurance Consultancy Services
+          </li>
+          <li>
+            Implementation and maintenance of Management Systems that meet the requirements of: ISO 9001, ISO 13485.
+          </li>
 
-          <div>
-              <ul class="space-y-2">
-                  <li class="font-bold text-lg">Follow our Social Media</li>
-                  <li>
-                      <a href="#" class="flex items-center space-x-2">
-                          <i class="fab fa-twitter"></i>
-                          <span>@rqacs</span>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" class="flex items-center space-x-2">
-                          <i class="fab fa-facebook"></i>
-                          <span>@rqacs</span>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" class="flex items-center space-x-2">
-                          <i class="fab fa-instagram"></i>
-                          <span>@rqacs</span>
-                      </a>
-                  </li>
-              </ul>
-          </div>
+        </ul>
 
-          <div>
-              <ul class="space-y-2">
-                  <li class="font-bold text-lg">Contact Us</li>
-                  <li>Milton</li>
-                  <li>Ontario Canada L9T</li>
-                  <li>Ashford</li>
-                  <li>Middlesex England TW15</li>
-              </ul>
-          </div>
+        <ul>
+          <li>Latest News</li>
+          <li>
+            Initial Launch of Website-
+          </li>
+          <li>
+            November 28th 2024
+          </li>
+          <li>
+            <a href="#">&nbsp;</a>
+          </li>
+
+        </ul>
+
+        <ul>
+          <li>Follow our Social Media</li>
+          <li>
+            <a href="#"><i class="fab fa-twitter "></i>: @rqacs</a>
+          </li>
+          <li>
+            <a href="#">&nbsp;</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook "></i>: @rqacs</a>
+          </li>
+          <li>
+            <a href="#">&nbsp;</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram "></i>: @rqacs</a>
+          </li>
+
+        </ul>
+
+        <ul>
+          <li>Contact Us</li>
+          <li>
+            Milton
+          </li>
+          <li>
+            Ontario Canada L9T
+          </li>
+          <li>
+            <a href="#">&nbsp;</a>
+          </li>
+          <li>
+            Ashford
+          </li>
+          <li>
+            Middlesex England TW15
+          </li>
+        </ul>
+
       </div>
-  </div>
-  <div class="text-center text-sm mt-2 mb0  pt-4">
+    </div>
+    <div class="footer-bottom text-center">
       Copyright &copy; 2025 rqacs
-  </div>
-</footer>
+    </div>
+  </footer>
 
 
-  <script src="./js/nav.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/my.js"></script>
 </body>
 
 

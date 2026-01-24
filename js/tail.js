@@ -1,15 +1,15 @@
 tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-            primary:'#252529',
-            primary_hover: '#374151',
-            secondary: '#D1D5DB80',
-            secondary_hover: '#143f85',
-            light_color: '#f4f4f4',
-            nav:'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5))',
-            nav_text:'#eee'
-        }
+  theme: {
+    extend: {
+      colors: {
+        primary: '#1e3a8a',           // Brighter Navy background
+        primary_hover: '#2563eb',     // Royal Blue for hovers
+        secondary: '#06b6d4',         // Vibrant Teal matching homepage
+        secondary_hover: '#22d3ee',   // Lighter Teal hover
+        light_color: '#f8fafc',       // Consistent light background
+        nav: '#1e3a8a',               // Consistent brighter nav background
+        nav_text: '#ffffff'           // White text
       }
     }
   }
+}
