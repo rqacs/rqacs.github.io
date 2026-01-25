@@ -359,6 +359,7 @@ nav a#openup {
 
   #showcase {
     min-height: 100vh !important;
+    background-attachment: scroll;
   }
 
   #showcase .container {
