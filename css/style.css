@@ -304,7 +304,7 @@ nav {
   box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
   margin: 0;
-  padding: 0 5%;
+  padding: 0 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -315,6 +315,7 @@ nav {
   font-weight: 800;
   color: var(--primary-color);
   letter-spacing: 1px;
+  /* Ensure no margin pushes it away from edge */
 }
 
 nav ul {
@@ -421,21 +422,13 @@ nav a#openup {
   }
 
   nav a#openup:after {
-    content: "\f0c9";
-    /* FontAwesome burger icon */
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    content: "|||";
+    transform: rotate(-90deg);
+    display: inline-block;
     font-size: 1.5rem;
-    color: var(--primary-color);
+    /* Larger hamburger */
+    color: #444;
+    /* Ensure flush right */
   }
 }
 
