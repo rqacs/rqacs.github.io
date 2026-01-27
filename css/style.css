@@ -290,7 +290,7 @@ footer .footer-bottom {
 /* Navigation - Modern Sticky Nav with Blur */
 nav {
   height: auto;
-  min-height: 70px;
+  min-height: 60px;
   width: 100%;
   background: var(--glass-bg);
   backdrop-filter: blur(12px);
@@ -796,4 +796,40 @@ input[type=submit]:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Hero Buttons */
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 580px) {
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-btns .btn {
+    width: 100%;
+    margin: 0 !important;
+  }
+}
+
+.brand a {
+  display: block;
+  /* Removes default inline spacing */
+  line-height: 0;
+  /* Removes line-height spacing */
+  padding: 0;
+}
+
+.brand img {
+  display: block;
+  /* Removes bottom spacing for images */
+  margin: 0;
+  padding: 5px 0;
+  /* Minimal vertical padding for the image itself */
 }

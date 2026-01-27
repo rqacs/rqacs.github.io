@@ -27,7 +27,7 @@ $(function () {
     const email = $('#email').val();
     const message = $('#subject').val();
 
-    const mailtoLink = `mailto:rqacs.inc@gmail.com?subject=Inquiry from ${name}&body=From: ${name} (${email})%0D%0A%0D%0A${encodeURIComponent(message)}`;
+    const mailtoLink = `mailto:info@rqacs.com?subject=Inquiry from ${name}&body=From: ${name} (${email})%0D%0A%0D%0A${encodeURIComponent(message)}`;
 
     window.location.href = mailtoLink;
   });
