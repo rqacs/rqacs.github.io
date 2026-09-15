@@ -33,6 +33,26 @@ $(function () {
     revealObserver.observe(this);
   });
 
+  // Cookie Banner Logic
+  const cookieBanner = $('#cookie-banner');
+  const cookieAccepted = localStorage.getItem('rqacs_cookie_consent');
+
+  if (cookieAccepted === 'accepted' || cookieAccepted === 'rejected') {
+    cookieBanner.removeClass('visible');
+  } else {
+    cookieBanner.addClass('visible');
+  }
+
+  $('.cookie-accept').on('click', function () {
+    localStorage.setItem('rqacs_cookie_consent', 'accepted');
+    cookieBanner.removeClass('visible');
+  });
+
+  $('.cookie-reject').on('click', function () {
+    localStorage.setItem('rqacs_cookie_consent', 'rejected');
+    cookieBanner.removeClass('visible');
+  });
+
   // Contact Form Logic
   $('#contact-form').on('submit', function (e) {
     e.preventDefault();

@@ -66,6 +66,18 @@ a {
   transition: all 0.3s ease;
 }
 
+:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.55);
+  outline-offset: 3px;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
 /* Sections */
 .section {
   padding: 4rem 0;
@@ -253,6 +265,81 @@ footer .footer-bottom {
   padding: 2rem;
   border-top: 1px solid var(--glass-border);
   color: var(--text-gray);
+}
+
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(15, 23, 42, 0.96);
+  color: #fff;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 -10px 30px rgba(15, 23, 42, 0.22);
+  display: none;
+}
+
+.cookie-banner.visible {
+  display: block;
+}
+
+.cookie-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cookie-inner p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.25rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.cookie-actions .btn {
+  min-height: 44px;
+  padding: 0.7rem 1rem;
+}
+
+.legal-section {
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.95), rgba(239, 246, 255, 0.9));
+}
+
+.legal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.legal-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 18px;
+  padding: 1.4rem 1.1rem;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05);
+}
+
+.legal-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+.legal-card p {
+  color: var(--text-gray);
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 /* Utils */
@@ -1162,6 +1249,10 @@ input[type=submit]:hover {
     grid-template-columns: 1fr;
   }
 
+  .legal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .containerx {
     padding: 0 1rem;
   }
@@ -1171,9 +1262,56 @@ input[type=submit]:hover {
     gap: 2rem 1.25rem;
     padding: 3rem 1.25rem 2rem;
   }
+
+  .cookie-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cookie-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (max-width: 580px) {
+  body {
+    padding-top: 60px;
+  }
+
+  #showcase {
+    min-height: 100vh !important;
+    height: auto !important;
+    background-attachment: scroll;
+    padding: 4rem 0 2rem;
+  }
+
+  #showcase h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero-badges {
+    gap: 0.5rem;
+  }
+
+  .hero-badges span {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .metric-strip {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .section-head {
+    font-size: 2rem !important;
+  }
+
+  .legal-grid {
+    grid-template-columns: 1fr;
+  }
+
   footer .footer-cols {
     grid-template-columns: 1fr;
     gap: 1.75rem;
