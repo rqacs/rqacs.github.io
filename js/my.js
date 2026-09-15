@@ -1,6 +1,6 @@
 //responsive nav
 $(function () {
-  menu = $('nav ul');
+  const menu = $('nav ul');
 
   $('#openup').on('click', function (e) {
     e.preventDefault(); menu.slideToggle();
@@ -19,13 +19,32 @@ $(function () {
   });
   $('.open-menu').height($(window).height());
 
+  $('.tab-content, #services, .content-img, .section-footer, .service-card').addClass('reveal');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12 });
+
+  $('.reveal').each(function () {
+    revealObserver.observe(this);
+  });
+
   // Contact Form Logic
   $('#contact-form').on('submit', function (e) {
     e.preventDefault();
 
-    const name = $('#name').val();
-    const email = $('#email').val();
-    const message = $('#subject').val();
+    const name = $('#name').val().trim();
+    const email = $('#email').val().trim();
+    const message = $('#subject').val().trim();
+
+    if (!name || !email || !message) {
+      alert('Please fill in your name, email and message before submitting.');
+      return;
+    }
 
     const mailtoLink = `mailto:info@rqacs.com?subject=Inquiry from ${name}&body=From: ${name} (${email})%0D%0A%0D%0A${encodeURIComponent(message)}`;
 
